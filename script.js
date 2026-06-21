@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('.card, .version-box').forEach(el => {
         el.style.opacity = "0";
         el.style.transform = "translateY(20px)";
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
-
 // Update the observer to apply the visible styles
 const style = document.createElement('style');
 style.innerHTML = `
